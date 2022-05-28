@@ -85,6 +85,66 @@ body {
   border-bottom-color: #fff;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+ 
+
+ body {
+	 font-family: 'Roboto Slab', serif;
+}
+ .morphing {
+	 
+	 font-size: 90px;
+	 
+	 color: #fff;
+	 min-height: 40vh;
+	 filter: contrast(25) blur(1px);
+}
+ .word {
+	 position: absolute;
+	 top: 40%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 animation: word 16s infinite ease-in-out;
+}
+ .word:nth-child(1) {
+	 animation-delay: -16s;
+}
+ .word:nth-child(2) {
+	 animation-delay: -14s;
+}
+ .word:nth-child(3) {
+	 animation-delay: -12s;
+}
+ .word:nth-child(4) {
+	 animation-delay: -10s;
+}
+ .word:nth-child(5) {
+	 animation-delay: -8s;
+}
+ .word:nth-child(6) {
+	 animation-delay: -6s;
+}
+ .word:nth-child(7) {
+	 animation-delay: -4s;
+}
+ @keyframes word {
+	 0%, 5%, 100% {
+		 filter: blur(0px);
+		 opacity: 1;
+	}
+	 20%, 80% {
+		 filter: blur(1em);
+		 opacity: 0;
+	}
+}
+ 
+
+
+
+
+
+
     </style>
 
     
@@ -107,11 +167,18 @@ body {
   </header>
 
   <main class="px-3">
-    <h1>Welcome</h1>
-    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <div class="morphing">
+      <div class="word">WELCOME</div>
+      <div class="word">TO</div>
+      <div class="word">THE</div>
+      <div class="word">IPNOTICS</div>
+      <div class="word">SERVER</div>
+    </div>
+    <p class="lead">Actualmente estas en la pagina principal con lo que sera necesario que acceda a cualquiera de las opciones que se presenta en la pagina web</p>
     <p class="lead">
-      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Mas información</a>
     </p>
+  
   </main>
 
   <footer class="mt-auto text-white-50">
